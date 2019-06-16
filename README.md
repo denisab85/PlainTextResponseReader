@@ -44,6 +44,8 @@ public class MyCustomResponseReader extends MOXyJsonProvider {
 }
 ```
 
+Note that in the overridden readFrom() method all we do is just call super.readFrom() of the parent class MOXyJsonProvider.
+
 Finally, we need to register our custom reader in the instance of javax.ws.rs.client.Client that will be querying our web service:
 
 ```java
